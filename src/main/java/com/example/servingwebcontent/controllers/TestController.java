@@ -25,8 +25,8 @@ public class TestController {
         test.setTest(name);
         test.setLast(last);
         if (test.getLast() == ""){
-            model.addAttribute("lastError", "Не заполнено название контрагента!");
-            return "redirect:/test";
+            model.addAttribute("error", "Не заполнено поле!");
+            return "test";
         }
 
         test.setId(id);

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TestService {
@@ -14,8 +15,8 @@ public class TestService {
     public void saveTest(Test test){
         testrepo.save(test);
     }
-    public Test find(Long id){
-        return testrepo.findById(id).orElseThrow();
+    public Optional<Test> find(Long id){
+        return testrepo.findById(id);
     }
     public List<Test> findAll(){
         return testrepo.findAll();

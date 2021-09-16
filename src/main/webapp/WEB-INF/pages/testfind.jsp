@@ -18,17 +18,11 @@
 </head>
 <body>
 <h1>oooooo</h1>
-<form method="post">
-    <input name="id" type="text" >
-    <input name="name" type="text" >
-    <input name="last" type="text" >
-    <input type="submit">
-</form>
 
 <c:forEach items="${test}" var="test">
     ${test.id}
     ${test.test}
-    <a href="/test"> ${test.last}</a>
+    <a href="/test"> ${test.last}</a> <br/>
 </c:forEach>
 
 </body>

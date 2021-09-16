@@ -15,17 +15,24 @@
     <title>Изменение заказа</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/style.css">
+    <script type="text/javascript" src="../resources/js/script.js"/>
+    <script type="text/javascript" src="../resources/js/script.js">
+        <script type="text/javascript" src="../resources/js/script.js"/>
+        <script type="text/javascript" src="${contextPath}/resources/js/script.js">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js%22%3E"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js%22%3E"></script>
 </head>
 <body>
 <h1>oooooo</h1>
+
 <form method="post">
-    <input name="id" type="text" >
+    <input name="id" type="text" required>
     <input name="name" type="text" >
     <input name="last" type="text" >
     <input type="submit">
 </form>
+${error}
 
-${lastError}
 
 </body>
 </html>

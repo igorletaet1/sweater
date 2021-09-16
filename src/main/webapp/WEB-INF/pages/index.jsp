@@ -13,7 +13,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js%22%3E"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js%22%3E"></script>
 </head>
-<body onclick="fff()">
+<body >
 
 <div class="con">
     <h3>${pageContext.request.userPrincipal.name}</h3>
