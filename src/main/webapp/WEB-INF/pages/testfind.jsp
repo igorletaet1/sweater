@@ -28,7 +28,7 @@
 <c:forEach items="${test}" var="test">
     ${test.id}
     ${test.test}
-    <a href="/test"> ${test.last}</a> <br/>
+    <a href="/test?${test.id}"> ${test.last}</a> <br/>
 </c:forEach>
 </div>
 <div class="footer"></div>

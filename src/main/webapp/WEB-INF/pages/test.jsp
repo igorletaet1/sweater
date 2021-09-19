@@ -32,7 +32,7 @@
 <h1>oooooo</h1>
 
 <form method="post">
-    <input name="id" type="text" required>
+    <input name="id"   type="text" required>
     <input name="name" type="text" >
     <input name="last" type="text" >
     <input type="submit">
@@ -43,7 +43,10 @@
 
     <div class="block1">д</div>
     <div class="block2">а</div>
-
+    <div class="flex">
+    <div class="block3"></div>
+    <div class="block4"></div>
+    </div>
 </div>
 <div class="footer"></div>
 </body>
@@ -51,7 +54,9 @@
     var bb = document.getElementById('yes');
     if(bb.innerHTML == 'yes'){
         setTimeout(yes, 2000);
-    }else if(bb.innerHTML == 'no'){
+    }
+    var ss = document.getElementById('no');
+    if(ss.innerHTML == 'no'){
         setTimeout(no, 2000);
     }
     function yes(){
@@ -61,7 +66,7 @@
         document.querySelector('.block2').style.visibility = 'visible';
         document.querySelector('.block2').style.top = '0px';
         document.querySelector('.block2').style.position = 'relative';
-        setTimeout(redirectYes, 1000);
+        setTimeout(redirectYes, 7000);
     }
     function no(){
         document.querySelector('.block3').style.visibility = 'visible';
@@ -70,7 +75,7 @@
         document.querySelector('.block4').style.visibility = 'visible';
         document.querySelector('.block4').style.right = '0px';
         document.querySelector('.block4').style.position = 'relative';
-        setTimeout(redirectNo, 1000);
+        setTimeout(redirectNo, 7000);
     }
 
     function redirectYes(){

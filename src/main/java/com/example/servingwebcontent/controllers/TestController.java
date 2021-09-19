@@ -31,6 +31,13 @@ public class TestController {
                 model.addAttribute("no", "no");
                 break;
         }
+        if(test.getTest() == "да"){
+            model.addAttribute("yes", "yes");
+            return "test";
+        }else if(test.getTest() == "нет"){
+            model.addAttribute("no", "no");
+            return "test";
+        }
         if(test.getTest() == ""){
             model.addAttribute("error", "Не заполнено поле!");
             return "test";
@@ -52,5 +59,14 @@ public class TestController {
         model.addAttribute("test", testService.findAll());
         return "testfind";
     }
+    @GetMapping("/success")
+    public String success(Model model){
 
+        return "success";
+    }
+    @GetMapping("/fail")
+    public String fail(Model model){
+
+        return "fail";
+    }
 }

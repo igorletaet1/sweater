@@ -17,7 +17,6 @@
 <div class="header">
     <a href="/test">тест</a>
     <p>${pageContext.request.userPrincipal.name}</p>
-    <a href="/logout">Выйти</a>
 </div>
 <div class="content">
     <h3>${pageContext.request.userPrincipal.name}</h3>
