@@ -10,7 +10,8 @@
 </head>
 
 <body>
-<div>
+<div class="header"></div>
+<div class="content">
     <table>
         <thead>
         <th>ID</th>
@@ -38,5 +39,6 @@
     </table>
     <a href="/">Главная</a>
 </div>
+<div class="footer"></div>
 </body>
 </html>

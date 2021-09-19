@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<div>
+<div class="content">
     <form:form method="POST" modelAttribute="userForm">
         <h2>Регистрация</h2>
         <div>

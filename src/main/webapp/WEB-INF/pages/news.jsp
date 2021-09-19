@@ -9,9 +9,16 @@
     <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/style.css">
 </head>
 <body>
-<div>
+<div class="header">
+    <a href="/test">тест</a>
+    <p>${pageContext.request.userPrincipal.name}</p>
+    <a href="/logout">Выйти</a>
+</div>
+<div class="content">
     <h2>Новости <br> Только по учетке.</h2>
     <a href="/">Главная</a>
+    <a href="/"></a>
 </div>
+<div class="footer"></div>
 </body>
 </html>

@@ -14,8 +14,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js%22%3E"></script>
 </head>
 <body >
-
-<div class="con">
+<div class="header">
+    <a href="/test">тест</a>
+    <p>${pageContext.request.userPrincipal.name}</p>
+    <a href="/logout">Выйти</a>
+</div>
+<div class="content">
     <h3>${pageContext.request.userPrincipal.name}</h3>
     <sec:authorize access="!isAuthenticated()">
         <h4><a href="/login">Войти</a></h4>
@@ -30,9 +34,5 @@
 
 </body>
 
-<script>
-     function fff() {
-        alert('Спасибо');
-    };
-</script>
+
 </html>

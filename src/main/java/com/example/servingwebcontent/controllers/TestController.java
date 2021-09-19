@@ -23,6 +23,18 @@ public class TestController {
                            @RequestParam String last,  Model model){
         Test test = new Test();
         test.setTest(name);
+        switch (test.getTest()){
+            case "да":
+                model.addAttribute("yes", "yes");
+                break;
+            case "нет":
+                model.addAttribute("no", "no");
+                break;
+        }
+        if(test.getTest() == ""){
+            model.addAttribute("error", "Не заполнено поле!");
+            return "test";
+        }
         test.setLast(last);
         if (test.getLast() == ""){
             model.addAttribute("error", "Не заполнено поле!");
